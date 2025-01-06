@@ -1,0 +1,87 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #00bcd4;
+  }
+  
+  /* Burger menu for mobile */
+  .burger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .burger .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #333;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .burger {
+      display: block;
+    }
+  }
+  
