@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Fragment } from 'react'
 import './App.css'
 import AboutMe from './components/AboutMe'
@@ -10,6 +11,17 @@ function App() {
    <NavBar />
    <AboutMe />
  </Fragment>
+=======
+import './App.css'
+import AboutMe from './components/AboutMe'
+
+function App() {
+  return (
+ 
+    <AboutMe />
+  
+     
+>>>>>>> PractiseReact
   )
 }
 
